@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Durillo Vargas">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Piedra Papel o Tijera, Lagarto Spock</title>
+</head>
+<body>
+    
+    <header>
+        <h1 class="titulo-juego">PIEDRA · PAPEL · TIJERA · LAGARTO · SPOCK</h1>
+        <h2 class="subtitulo-juego">El juego definitivo</h2>
+    </header>
+
+    <main>
+        <div class="contenedor-juego">
+            <div class="paneles-arriba">
+                <div class="panel-seleccion-jugada">
+                    <h2>Elige tu jugada</h2>
+                    <div class="contenedor-elecciones-juego">
+                        <button id="piedra" class="boton-eleccion-jugada"> <img class="icono-jugada" src="imagenes/1FAA8.svg" alt="Piedra vence a: Tijera y Lagarto"></button>
+                        <button id="papel" class="boton-eleccion-jugada"><img class="icono-jugada" src="imagenes/PAPER.svg" alt="Papel vence a: Piedra y Spock"></button>
+                        <button id="tijera" class="boton-eleccion-jugada"><img class="icono-jugada" src="imagenes/2702.svg" alt="Tijera vence a: Papel y Lagarto"></button>
+                        <button id="lagarto" class="boton-eleccion-jugada"><img class="icono-jugada" src="imagenes/1F98E.svg" alt="Lagarto vence a: Papel y Spock"></button>
+                        <button id="spock" class="boton-eleccion-jugada"><img class="icono-jugada" src="imagenes/SPOK.svg" alt="Spock vence a: Tijera y a Piedra"></button>
+                    </div>
+                </div>
+
+                <div class="panel-batalla">
+                    <h2>Batalla</h2>
+                    <div class="contenedor-jugadores">
+                        <div class="jugador">
+                            <div class="etiqueta-jugador">Tú</div>
+                            <div id="display-usuario" class="mostrar-jugada">
+                                <div class="placeholder">?</div>
+                            </div> 
+                        </div>
+
+                        <div class="vs-circle">VS</div>
+
+                        <div class="jugador">
+                            <div class="etiqueta-jugador">CPU</div>
+                            <div id="display-cpu" class="mostrar-jugada">
+                                <div class="placeholder">?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor-resultado">
+                    <div class="resultados">
+                        <div id="mensaje-resultado" class="mensaje-resultado">¡Batalla!</div>
+                        
+                        <div class="estadisticas-juego">
+                            <div class="panel-estadistica">
+                                <div id="victorias" class="valor-estadistica">0</div>
+                                <div class="etiqueta-estadistica">Victorias</div>
+                            </div>
+                            <div class="panel-estadistica">
+                                <div id="derrotas" class="valor-estadistica">0</div>
+                                <div class="etiqueta-estadistica">Derrotas</div>
+                            </div>
+                            <div class="panel-estadistica">
+                                <div id="empates" class="valor-estadistica">0</div>
+                                <div class="etiqueta-estadistica">Empates</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Proyecto evaluación RA 03 - Lenguajes de marcas y sistemas de gestión de información.
+            Realizado por: Alejandro Durillo Vargas (Declaro que no he usado IA en el proyecto)</h1>
+    </footer>
+
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
