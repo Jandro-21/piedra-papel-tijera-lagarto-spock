@@ -114,12 +114,13 @@ function mostrarEleccion(display, eleccion, jugador) {
             const iconoClonado = imgOriginal.cloneNode(true);
             iconoClonado.className = "icono-jugada-grande"; 
 
-            const jugada = document.createElement('div');
-           
+            const texto = document.createElement('div');
+            texto.className = "texto-jugada";
+            texto.textContent = eleccion.toUpperCase();
 
             
             display.appendChild(iconoClonado);
-            display.appendChild(jugada);
+            display.appendChild(texto);
         }
     }
 }
